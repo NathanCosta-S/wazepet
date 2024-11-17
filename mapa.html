@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/mapa.css" />
+    <link rel="shortcut icon" href="src/img/logo2.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <title>WazePet-Mapa</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <div class="content">
+          <div class="logo">
+            <img src="src/img/logo.png" alt="Logo"/>
+          </div>
+        <ul class="menu-lista">
+          <li><a href="wazepet.html">Pontos de Ajuda</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="index.html">Inicio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <hr />
+      <section id="map-container">
+        <h1>WazePet Mapa</h1>
+        <div id="map"></div>
+      </section>
+   
+      <section class="formularioSugestao">
+        <h2>Sugira um Novo Ponto de Ajuda</h2>
+        <form action="submit-suggestion.php" method="post">
+          <label for="name">Seu Nome:</label>
+          <input type="text" id="name" name="name" placeholder="Digite seu nome" required />
+      
+          <label for="email">Seu E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+      
+          <label for="location">Localização do Ponto de Ajuda:</label>
+          <input type="text" id="location" name="location" placeholder="Endereço ou ponto de referência" required />
+      
+          <label for="description">Descrição do Local:</label>
+          <textarea id="description" name="description" placeholder="Descreva o local e como ele ajuda os animais" rows="5" required></textarea>
+      
+          <label for="image">Enviar Foto (opcional):</label>
+          <input type="file" id="image" name="image" accept="image/*" />
+      
+         
+          </select>
+      
+          <button type="submit">Enviar Sugestão</button>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>WazePet</h3>
+            
+          </div>
+          <div class="footer-links">
+              <ul>
+                <h4>Links Úteis</h4>
+              <li><a href="wazepet.html">Pontos de Ajuda</a></li>
+              <li><a href="mapa.html">Mapa WazePet</a></li>
+              <li><a href="#">Parceiros</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Siga-nos</h4>
+            <div class="social-icons">
+              <a href="#"><img src="src/img/facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="src/img/instagram.png" alt="Instagram" /></a>
+              <a href="#"><img src="src/img/e-mail.png" alt="E-mail" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 WazePet. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="src/js/mapa.js"></script>
+  </body>
+</html>

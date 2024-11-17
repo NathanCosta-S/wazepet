@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/contato.css">
+    <title>WazePet-Contato</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="menu">
+      <div class="content">
+        <div class="logo">
+          <img src="src/img/logo.png" alt="Logo"/>
+        </div>
+      <ul class="menu-lista">
+        <li><a href="wazepet.html">Pontos de Ajuda</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+      <hr />
+
+      <form id="formContato" action="enviar.php" method="POST">
+        <h2>Entre em Contato</h2>
+      
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+      
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
+      
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." rows="5" required></textarea>
+      
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+      
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>WazePet</h3>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <h4>Links Úteis</h4>
+              <li><a href="wazepet.html">Pontos de Ajuda</a></li>
+              <li><a href="mapa.html">Mapa WazePet</a></li>
+              <li><a href="#">Parceiros</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Siga-nos</h4>
+            <div class="social-icons">
+              <a href="#"><img src="src/img/facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="src/img/instagram.png" alt="Instagram" /></a>
+              <a href="#"><img src="src/img/e-mail.png" alt="E-mail" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 WazePet. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+</body>
+</html>

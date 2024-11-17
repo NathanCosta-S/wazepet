@@ -1,0 +1,60 @@
+#formContato {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to right, 	#003253, #41bca6);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  #formContato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  #formContato label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  #formContato input,
+  #formContato textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  #formContato input:focus,
+  #formContato textarea:focus {
+    border-color: #41bca6; /* Cor do foco */
+    outline: none;
+  }
+  
+  #formContato button {
+    width: 100%;
+    padding: 12px;
+    background-color: #41bca6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #formContato button:hover {
+    background-color: #41bca6; /* Cor de fundo no hover */
+  }
+  
+  #formContato button:active {
+    transform: scale(0.98); /* Efeito de pressionamento */
+  }
+  

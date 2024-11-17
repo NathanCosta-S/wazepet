@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .header {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .menu {
+    background: linear-gradient(to right, 	#003253, #41bca6);
+    opacity : 0.8;
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.1px solid #003253;
+    border-radius: 40px; 
+  }
+  
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  .logo a{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid ;
+    color: #003253;
+  }
+  
+  
+  
+  .menu-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menu-lista li {
+    margin-right: 20px;
+  }
+  
+  .menu-lista a {
+    text-decoration: none;
+    color: #003253;
+    transition: color 0.2s ease;
+  }
+  
+  .menu-lista a:hover {
+    color: #41bca6;
+  }
+  
+  .menuPrincipal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menuPrincipal ul li {
+    margin-right: 20px;
+  }
+  
+  .menuPrincipal ul a {
+    text-decoration: none;
+    color: #003253;
+    transition: color 0.2s ease;
+  }
+  
+  .menuPrincipal ul a:hover {
+    color: #41bca6;
+  }
+  
+  nav a:link {
+    color: #003253;
+  }
+  nav a:hover {
+    color: white;
+  }
+  
+  hr {
+    border: solid 1px #41bca6;
+    margin: 10px 0 0 0;
+  }
+
+
+
+#map-container {
+    margin: 20px;
+    
+    height: 400px;
+}
+#map-container h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 10px;
+}
+
+#map {
+    height: 100%;
+}
+
+
+.formularioSugestao {
+    background: linear-gradient(to right, #36a38f, #003253);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 60px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .formularioSugestao h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formularioSugestao label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .formularioSugestao input,
+  .formularioSugestao textarea,
+  .formularioSugestao select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .formularioSugestao button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #41bca6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .formularioSugestao button:hover {
+    background-color: #36a38f;
+  }
+

@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+h3,h4{
+  background-color: #41bca6;
+  color: white;
+}
+
+
+.header {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+}
+.menu {
+  background: linear-gradient(to right, 	#003253, #41bca6);
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 0.1px solid #003253;
+  border-radius: 40px; 
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.menu .logo img {
+  width: 150px;
+  height: auto;
+}
+
+.logo a{
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+  border: 2px solid ;
+  color: #003253;
+}
+
+
+
+.menu-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-lista li {
+  margin-right: 20px;
+}
+
+.menu-lista a {
+  text-decoration: none;
+  color: #003253;
+  transition: color 0.2s ease;
+}
+
+.menu-lista a:hover {
+  color: #41bca6;
+}
+
+.menuPrincipal ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuPrincipal ul li {
+  margin-right: 20px;
+}
+
+.menuPrincipal ul a {
+  text-decoration: none;
+  color: #003253;
+  transition: color 0.2s ease;
+}
+
+.menuPrincipal ul a:hover {
+  color: #41bca6;
+}
+
+nav a:link {
+  color: #003253;
+}
+nav a:hover {
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Empilha a logo e o menu verticalmente */
+  align-items: center; /* Centraliza todos os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  text-align: center; /* Alinha o texto no centro */
+}
+
+@media (max-width: 768px) {
+
+  .menu{
+    border-radius: none;
+  }
+  .content {
+    align-items: center; /* Garante que o conteúdo (logo + menu) continue centralizado */
+  }
+
+  .menu-lista {
+    flex-direction: column; /* Organiza os itens do menu verticalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+  }
+
+  .menu-lista li {
+    margin-bottom: 10px; /* Espaço entre os itens no menu vertical */
+  }
+
+  .logo img {
+    width: 120px; /* Ajuste da largura da imagem para telas menores */
+  }
+}
+
+hr {
+  border: solid 1px #41bca6;
+  margin: 10px 0 0 0;
+}
+
+
+.footer {
+  background-image: url(../img/footer2.png);
+  background-size: cover;
+  background-position: center; 
+  color: rgb(0, 0, 0);
+  padding: 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1 1 30%;
+  min-width: 200px;
+}
+
+
+.footer-about p {
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #41bca6;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social .social-icons a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.footer-social .social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #7b7b7b;
+}

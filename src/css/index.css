@@ -1,0 +1,124 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 60px 0;
+}
+
+.logo {
+  max-width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.texto {
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  margin-top: 20px;
+  font-size: large;
+  color: #003253;
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  font-size: larger;
+}
+
+.prototipo {
+  width: 250px;
+}
+
+.sobre2 {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  font-size: larger;
+}
+.sobre2 h2 {
+  text-align: end;
+}
+
+.pontos {
+  width: 400px;
+}
+
+/* Estilos para o botão de login */
+.btnLogin {
+    display: inline-block;
+    padding: 12px 30px;          /* Tamanho do botão */
+    font-size: 16px;             /* Tamanho da fonte */
+    font-weight: 600;            /* Peso da fonte */
+    color: white;               /* Cor do texto */
+    background-color: #41bca6;  /* Cor de fundo */
+    border: 2px solid transparent; /* Borda invisível inicialmente */
+    border-radius: 50px;         /* Bordas arredondadas */
+    text-align: center;         /* Alinha o texto no centro */
+    text-decoration: none;      /* Remove o sublinhado do link */
+    transition: all 0.3s ease;  /* Transição suave para efeitos */
+  }
+  
+  /* Efeito de hover */
+  .btnLogin:hover {
+    background-color: #41bca6;  /* Cor de fundo mais escura ao passar o mouse */
+    border-color: #41bca6;      /* Borda visível na cor de fundo */
+    transform: translateY(-2px); /* Levanta ligeiramente o botão */
+  }
+  
+  /* Efeito de foco (quando o botão recebe foco com o teclado) */
+  .btnLogin:focus {
+    outline: none;              /* Remove o contorno padrão */
+    box-shadow: 0 0 5px #41bca6; /* Adiciona um brilho ao redor do botão */
+  }
+  
+
+  @media (max-width: 768px) {
+    
+    .prototipo{
+      width: 100%;
+    }
+    .pontos{
+      width: 100%;
+    }
+    .sobre2 h2 {
+      text-align: center;
+    }
+    .main .texto {
+      font-size: 0.9rem;
+      width: 90%;
+    }
+  
+    .sobre, .sobre2 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .sobre div, .sobre2 div {
+      max-width: 100%;
+    }
+  
+    .btnLogin {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .main {
+      margin: 40px 0;
+    }
+  
+    .main .texto {
+      font-size: 1.2rem;
+    }
+  
+    .sobre, .sobre2 {
+      gap: 40px;
+    }
+  }
+  

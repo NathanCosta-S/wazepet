@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/card.css" />
+    <link rel="shortcut icon" href="../img/logo2.ico" type="image/x-icon" />
+    <title>WazePet-Card</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <div class="content">
+          <div class="logo">
+            <img src="../img/logo.png" alt="Logo"/>
+          </div>
+        <ul class="menu-lista">
+          <li><a href="../../wazepet.html">Pontos de Ajuda</a></li>
+          <li><a href="../../contato.html">Contato</a></li>
+          <li><a href="../../index.html">Inicio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <hr />
+
+    <section>
+      <div class="animais">
+        <h2>Alguns dos nossos amiguinhos que podemos entrar nesse ponto de ajuda WazePet</h2>
+        <div class="imganimal">
+          <img src="../img/dog4.jfif" alt="" />
+        </div>
+       
+      </div>
+    </section>
+
+    <section>
+      <div class="painelAjuda">
+        <div class="painel">
+          <h2>Manhã</h2>
+          <form id="formManha">
+            <label for="opcaoManha">Opção:</label>
+            <select id="opcaoManha" required>
+              <option value="racao">Ração</option>
+              <option value="agua">Água</option>
+              <option value="os2">Os 2</option>
+            </select>
+            <label for="horarioManha">Horário:</label>
+            <input type="time" id="horarioManha" min="05:00" max="11:59" required />
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+    
+        <div class="painel">
+          <h2>Tarde</h2>
+          <form id="formTarde">
+            <label for="opcaoTarde">Opção:</label>
+            <select id="opcaoTarde" required>
+              <option value="racao">Ração</option>
+              <option value="agua">Água</option>
+              <option value="os2">Os 2</option>
+            </select>
+            <label for="horarioTarde">Horário:</label>
+            <input type="time" id="horarioTarde" min="12:00" max="18:59" required />
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+    
+        <div class="painel">
+          <h2>Noite</h2>
+          <form id="formNoite">
+            <label for="opcaoNoite">Opção:</label>
+            <select id="opcaoNoite" required>
+              <option value="racao">Ração</option>
+              <option value="agua">Água</option>
+              <option value="os2">Os 2</option>
+            </select>
+            <label for="horarioNoite">Horário:</label>
+            <input type="time" id="horarioNoite" min="19:00" max="23:59" required />
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+        <div id="observacaoForm">
+          <form id="formObservacao">
+            <h3>Observações</h3>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required />
+          
+            <label for="telefone">Telefone (opcional):</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" pattern="[0-9]{10,11}" />
+          
+            <label for="observacao">Observação:</label>
+            <textarea id="observacao" name="observacao" rows="4" placeholder="Escreva sua observação aqui..." required></textarea>
+          
+            <button type="submit" id="enviarObservacao">Enviar Observação</button>
+          </form>
+          
+          <!-- Área para a mensagem de conclusão, inicialmente oculta -->
+          <div id="mensagemConcluida" class="hidden">
+            <p>Observação enviada com sucesso!</p>
+          </div>
+        </div>
+    
+      <!-- Modal -->
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <h2>Leia o QR Code</h2>
+          <button id="abrirCamera">Abrir Câmera</button>
+          <button id="fecharModal">Fechar</button>
+        </div>
+      
+      </div>
+      
+
+
+    </section>
+    
+    
+    
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>WazePet</h3>
+         
+        </div>
+        <div class="footer-links">
+          <ul>
+            <h4>Links Úteis</h4>
+            <li><a href="wazepet.html">Pontos de Ajuda</a></li>
+            <li><a href="mapa.html">Mapa WazePet</a></li>
+            <li><a href="#">Parceiros</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Siga-nos</h4>
+          <div class="social-icons">
+            <a href="#"><img src="../img/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="../img/instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="../img/e-mail.png" alt="E-mail" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 WazePet. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="../js/cards.js"></script>
+  </body>
+</html>
