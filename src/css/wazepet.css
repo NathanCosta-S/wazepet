@@ -179,3 +179,13 @@ a {
   border-radius: 10px;
   background-color: #003253;
 }
+
+@media (max-width: 768px) {
+  
+  .main{
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
