@@ -12,13 +12,10 @@ h3,h4{
   color: white;
 }
 
-
 .header {
   display: flex;
-
   justify-content: center;
   align-items: center;
-
 }
 .menu {
   background: linear-gradient(to right, 	#003253, #41bca6);
@@ -48,8 +45,6 @@ h3,h4{
   border: 2px solid ;
   color: #003253;
 }
-
-
 
 .menu-lista {
   list-style: none;
@@ -104,10 +99,10 @@ nav a:hover {
 
 .content {
   display: flex;
-  flex-direction: column; /* Empilha a logo e o menu verticalmente */
-  align-items: center; /* Centraliza todos os itens horizontalmente */
-  justify-content: center; /* Centraliza os itens verticalmente */
-  text-align: center; /* Alinha o texto no centro */
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
 }
 
 @media (max-width: 768px) {
@@ -116,29 +111,26 @@ nav a:hover {
     border-radius: none;
   }
   .content {
-    align-items: center; /* Garante que o conteúdo (logo + menu) continue centralizado */
+    align-items: center; 
   }
 
   .menu-lista {
-    flex-direction: column; /* Organiza os itens do menu verticalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .menu-lista li {
-    margin-bottom: 10px; /* Espaço entre os itens no menu vertical */
+    margin-bottom: 10px; 
   }
 
   .logo img {
-    width: 120px; /* Ajuste da largura da imagem para telas menores */
+    width: 120px; 
   }
 }
-
 hr {
   border: solid 1px #41bca6;
   margin: 10px 0 0 0;
 }
-
-
 .footer {
   background-image: url(../img/footer2.png);
   background-size: cover;

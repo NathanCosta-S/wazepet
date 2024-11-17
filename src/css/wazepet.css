@@ -142,9 +142,8 @@ a {
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content:  flex-start;
-  gap: 5px; 
-  
+  justify-content: flex-start;
+  gap: 5px;
 }
 
 .card {
@@ -181,11 +180,9 @@ a {
 }
 
 @media (max-width: 768px) {
-  
-  .main{
+  .main {
     display: block;
     align-items: center;
     justify-content: center;
   }
-
 }

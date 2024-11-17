@@ -1,13 +1,12 @@
-// Inicializa o mapa, definindo a coordenada central e o nível de zoom
 var map = L.map("map").setView([-22.2195, -49.9497], 13);
 
-// Define o tile layer, que é a camada de imagem do mapa
+
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
-// Array com bairros específicos de São Paulo
+
 var neighborhoods = [
   {
     coords: [-22.211518808745954, -49.950987669317485],
@@ -27,7 +26,7 @@ var neighborhoods = [
   },
 ];
 
-// Loop para adicionar cada bairro ao mapa
+
 neighborhoods.forEach(function (neighborhood) {
   var marker = L.marker(neighborhood.coords).addTo(map);
   marker.bindPopup(neighborhood.text);

@@ -33,8 +33,7 @@
   
   #formContato input:focus,
   #formContato textarea:focus {
-    border-color: #41bca6; /* Cor do foco */
-    outline: none;
+    border-color: #41bca6; 
   }
   
   #formContato button {
@@ -51,10 +50,10 @@
   }
   
   #formContato button:hover {
-    background-color: #41bca6; /* Cor de fundo no hover */
+    background-color: #41bca6;
   }
   
   #formContato button:active {
-    transform: scale(0.98); /* Efeito de pressionamento */
+    transform: scale(0.98); 
   }
   

@@ -48,35 +48,29 @@
   width: 400px;
 }
 
-/* Estilos para o botão de login */
 .btnLogin {
     display: inline-block;
-    padding: 12px 30px;          /* Tamanho do botão */
-    font-size: 16px;             /* Tamanho da fonte */
-    font-weight: 600;            /* Peso da fonte */
-    color: white;               /* Cor do texto */
-    background-color: #41bca6;  /* Cor de fundo */
-    border: 2px solid transparent; /* Borda invisível inicialmente */
-    border-radius: 50px;         /* Bordas arredondadas */
-    text-align: center;         /* Alinha o texto no centro */
-    text-decoration: none;      /* Remove o sublinhado do link */
-    transition: all 0.3s ease;  /* Transição suave para efeitos */
+    padding: 12px 30px;     
+    font-size: 16px;         
+    font-weight: 600;           
+    color: white;             
+    background-color: #41bca6; 
+    border: 2px solid transparent; 
+    border-radius: 50px;     
+    text-align: center;        
+    text-decoration: none;     
+    transition: all 0.3s ease; 
   }
-  
-  /* Efeito de hover */
-  .btnLogin:hover {
-    background-color: #41bca6;  /* Cor de fundo mais escura ao passar o mouse */
-    border-color: #41bca6;      /* Borda visível na cor de fundo */
-    transform: translateY(-2px); /* Levanta ligeiramente o botão */
-  }
-  
-  /* Efeito de foco (quando o botão recebe foco com o teclado) */
-  .btnLogin:focus {
-    outline: none;              /* Remove o contorno padrão */
-    box-shadow: 0 0 5px #41bca6; /* Adiciona um brilho ao redor do botão */
-  }
-  
 
+  .btnLogin:hover {
+    background-color: #41bca6; 
+    border-color: #41bca6;      
+    transform: translateY(-2px);
+  }
+  .btnLogin:focus {
+    outline: none;             
+    box-shadow: 0 0 5px #41bca6; 
+  }
   @media (max-width: 768px) {
     
     .prototipo{
